@@ -1,0 +1,13 @@
+quarkus:
+  application:
+    name: airq-db-migrations
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    jdbc:
+      url: jdbc:postgresql://10.1.1.50:5432/warehouse
+    reactive:
+      url: postgresql://10.1.1.50:5432/warehouse
+  flyway:
+    migrate-at-start: true
+    baseline-on-migrate: true
